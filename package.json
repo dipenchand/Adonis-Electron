@@ -1,0 +1,16 @@
+{
+  "name": "adonis-electron",
+  "version": "1.0.0",
+  "description": "An AdonisJS boilerplate for Electron",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+    "author": "Dipendra",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^14.0.1",
+    "electron-packager": "^15.4.0",
+    "pm2": "^5.1.1"
+  }
+}
