@@ -1,34 +1,24 @@
-# 📘 AdonisJS boilerplate for Electron
+# 📘 AdonisJS API boilerplate for Electron
+Purpose of this Repository is to run AdonisJS as a Backend Server in Electron
 
-## 🔧 Getting started
-
-### Requirements
-- [Node](https://nodejs.org/) v12.18.3 >
-- [NPM](https://www.npmjs.com/) v6.14.5 >
-
-### Download
-Clone the repository
-```sh
-git clone https://github.com/CorneHQ/electron-adonisjs-boilerplate.git
-```
-Or [download](https://github.com/CorneHQ/electron-adonisjs-boilerplate/archive/master.zip) directly as .zip
+### Initial Setup
+- Create an AdonisJS API Project
+- Build the Project
+- Copy **Build** directory and paste inside this repo and rename to **App**
+- Also copy **.env** from project and paste inside **app**
 
 ### Installing dependencies
-1. Go to the directory of the project
-2. Run `npm install`
-3. Go to the app directory by doing `cd app`
-4. Run `npm install`
+- Run `npm install` inside Project **Root** Directory and inside **app** directory
 
-## 🔥 Commands
-| Command | Description |
-| ------ | ------ |
-| `npm start` | Starts electron development environment. |
-
+## 🔥 Development
+- Then in the **Root** directory, run `npm run start`
 ## 📦 Building
-Use the following links for making installers of your project
-- [Electron Packager](https://github.com/electron/electron-packager)
-- [Electron Docs](https://www.electronjs.org/docs/tutorial/application-distribution)
+- If Electron starts without an error in Development, then run following command to **publish an App**
+  - `npx electron-packager . app2 --platform=darwin` _For MacOS_
+  - `npx electron-packager . app2 --platform=win32` _For Windows_
+  - `npx electron-packager . app2 --all` _For All Platform_
+  - Optionally `--asar` flag can be used
 
 ## 📝 Todo's
 - [ ] Adding splash screen
-- [ ] Optimize startup time
+- [ ] Use **PM2**
