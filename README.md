@@ -6,8 +6,10 @@ Purpose of this Repository is to run AdonisJS as a Backend Server in Electron
 - Build the Project
 - Copy **Build** directory and paste inside this repo and rename to **App**
 - Also copy **.env** from project and paste inside **app**
+- Run MySQL and create database
 
 ### Installing dependencies
+- Run `npm i --g @adonisjs/cli`
 - Run `npm install` inside Project **Root** Directory and inside **app** directory
 
 ## 🔥 Development
